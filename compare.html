@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare players — StatSnap</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">S</span> STAT<span>SNAP</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="leaderboard.html">Leaderboards</a>
+      <a class="active" href="compare.html">Compare</a>
+    </nav>
+  </header>
+
+  <main class="wrap page">
+    <p class="eyebrow">SETTLE THE DEBATE</p>
+    <h1>Player compare<span>.</span></h1>
+    <p class="sub">
+      Choose two demo players and compare their sample statistics.
+    </p>
+
+    <div class="compare-controls">
+      <label>
+        Player A
+        <select id="playerA">
+          <option value="0">Patrick Mahomes (demo)</option>
+          <option value="1">Josh Allen (demo)</option>
+        </select>
+      </label>
+
+      <span class="versus">VS</span>
+
+      <label>
+        Player B
+        <select id="playerB">
+          <option value="1">Josh Allen (demo)</option>
+          <option value="0">Patrick Mahomes (demo)</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="compareResult" class="compare-grid"></div>
+
+    <p class="hint">
+      Demo values are illustrative and not live or current player statistics.
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
