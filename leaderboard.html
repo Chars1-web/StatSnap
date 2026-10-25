@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leaderboards — StatSnap</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">S</span> STAT<span>SNAP</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="leaderboard.html">Leaderboards</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+  </header>
+
+  <main class="wrap page">
+    <p class="eyebrow">RANK THE LEAGUE</p>
+    <h1>Leaderboards<span>.</span></h1>
+    <p class="sub">
+      Pick a sport and browse a simple sortable stats table.
+    </p>
+
+    <div class="toolbar">
+      <label>
+        Sport
+        <select id="sportSelect">
+          <option>NFL</option>
+          <option>NBA</option>
+          <option>MLB</option>
+          <option>Soccer</option>
+        </select>
+      </label>
+
+      <label>
+        Sort by
+        <select id="sortSelect">
+          <option value="value">Value</option>
+          <option value="name">Player name</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>PLAYER</th>
+            <th>TEAM</th>
+            <th>STAT</th>
+            <th>VALUE</th>
+          </tr>
+        </thead>
+        <tbody id="leaderRows"></tbody>
+      </table>
+    </div>
+
+    <p class="hint">
+      These are sample rows to show the layout.
+      Replace them with API data before publishing real stats.
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
