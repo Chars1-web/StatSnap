@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StatSnap — Sports, broken down.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-icon">S</span> STAT<span>SNAP</span>
+    </a>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="leaderboard.html">Leaderboards</a>
+      <a href="compare.html">Compare</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">SPORTS ANALYTICS, MADE SIMPLE</p>
+      <h1>Know the <span>numbers.</span></h1>
+      <p class="sub">
+        Explore player stats, compare performances, and find the numbers
+        behind the debate.
+      </p>
+
+      <label class="search">
+        <span>⌕</span>
+        <input id="playerSearch"
+          placeholder="Search sample players..."
+          aria-label="Search players">
+        <button id="searchBtn">Search</button>
+      </label>
+
+      <p id="searchMessage" class="hint">
+        Demo data is shown below. Connect an API to use real statistics.
+      </p>
+    </section>
+
+    <section class="section-head">
+      <div>
+        <p class="eyebrow">EXPLORE</p>
+        <h2>Choose your sport</h2>
+      </div>
+    </section>
+
+    <div class="sport-grid">
+      <button class="sport-card selected" data-sport="NFL">
+        <span>🏈</span><b>NFL</b><small>Football</small>
+      </button>
+      <button class="sport-card" data-sport="NBA">
+        <span>🏀</span><b>NBA</b><small>Basketball</small>
+      </button>
+      <button class="sport-card" data-sport="MLB">
+        <span>⚾</span><b>MLB</b><small>Baseball</small>
+      </button>
+      <button class="sport-card" data-sport="Soccer">
+        <span>⚽</span><b>Soccer</b><small>Football</small>
+      </button>
+    </div>
+
+    <section class="section-head">
+      <div>
+        <p class="eyebrow">SAMPLE DATA</p>
+        <h2 id="leaderTitle">NFL leaders</h2>
+      </div>
+      <a class="text-link" href="leaderboard.html">View leaderboard ↗</a>
+    </section>
+
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>PLAYER</th>
+            <th>TEAM</th>
+            <th>STAT</th>
+            <th>VALUE</th>
+          </tr>
+        </thead>
+        <tbody id="leaderRows"></tbody>
+      </table>
+    </div>
+
+    <section class="feature-grid">
+      <a class="feature-card" href="leaderboard.html">
+        <span class="feature-icon">↗</span>
+        <h3>Leaderboards</h3>
+        <p>Sort players by the stats that matter.</p>
+        <span class="text-link">Explore rankings →</span>
+      </a>
+
+      <a class="feature-card" href="compare.html">
+        <span class="feature-icon">⇄</span>
+        <h3>Player comparison</h3>
+        <p>Compare two players side by side.</p>
+        <span class="text-link">Compare players →</span>
+      </a>
+    </section>
+
+    <footer>
+      STATSNAP · A starter project for sports fans.
+      Demo statistics are illustrative, not current real-world data.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
